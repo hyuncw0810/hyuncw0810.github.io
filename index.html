@@ -1,43 +1,409 @@
-<html> 
-   <head> 
-      <title>열코 div 테스트</title> 
-      <style type=text/css> 
-         .leftdiv {float: left;} 
-         .middlediv {float: left;  background-color:gray } 
-         .rightdiv  {float: left;} 
-         div{ 
-         padding : 1%; 
-         color: white; 
-         background-color: 009900; 
-         width: 20%; 
-         border: solid black; 
-         } 
-      </style> 
-   </head> 
-<body>
-<div class="leftdiv"> 
-         <h1>열코1</h1> 
-         <p>열코의 프로그래밍 일기</p> 
-      </div> 
-      <div class="middlediv"> 
-         <h1>열코2</h1> 
-         <p>열코의 프로그래밍 일기</p> 
-      </div> 
-      <div class="rightdiv"> 
-         <h1>열코3</h1> 
-         <p>열코의 프로그래밍 일기</p> 
-      </div> 
-   </body>
-   </html>
-   >
-<meta http-equiv="Content-Type" content="text/html; charset="utf8">
-<title>Insert title here</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project</title>
+  <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+
+  <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div style="background-color:red">첫번째 영역</div>
-<div style="width:100px; height:100px; background-color:#CF0">두번째 영역</div>
-<div style="width:50px; height:50px; border:1px solid black; background-color:yellow">세번째 영역</div>
-<div style="width:100px; height:50px; border:3px solid black; float:right">네번째 영역</div>
-<div style="width:30; height:30px background-color:green; float:left; margin:30px;">다섯번째 영역</div>
+<div id="content-wrapper">
+  <header class="header header--bg">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">OBELA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+        </div>
+      </nav>
+      <div class="header__content text-center">
+        <span class="header__content__block">HELLO</span>
+        <h1 class="header__content__title">I'M CHAE WON HYUN</h1>
+        <ul class="header__content__sub-title">
+          <li>INTRODUCTION <span class="padding">&#45;</span></li>
+          <li>ABOUT ME <span class="padding">&#45;</span></li>
+          <li>PROGRAMMER</li>
+        </ul>
+        <a class="header__button" href="#">Let's start talking about me</a>
+      </div>
+      <div class="social-icon pull-right">
+        <ul>
+          <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container about__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title">ABOUT ME</h2>
+          <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+          <p class="page-section__paragraph">Thank you for visiting my website. </p>
+          <div class="row gutters-80">
+            <div class="col-md-4">
+              <div class="about__image">
+                <img src="이미지/test.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-8 about__content">
+              <p class="about__description">I'm Chae Won Hyun. I made this site while I was learning programming. Let me introduce myself.</p>
+              <div class="row row--margin-top">
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>NAME :</strong> Chae Won Hyun</p>
+                  <p class="about__bio"><strong>AGE :</strong> 14</p>
+                </div>
+                <div class="col-md-4">
+                  <p class="about__bio"><strong>JOB TITLE :</strong> Student</p>
+                  <p class="about__bio"><strong>LOCATION :</strong> Seoul, Korea</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="button button--colorful button--margin" href="#">DOWNLOAD CV</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="button button--colorful button--margin" href="#">HIRE ME</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skill skill--bg">
+    <div class="container skill__container--narrow">
+      <div class="page-section">
+        <h2 class="page-section__title page-section__title--white">MY SKILL</h2>
+        <img class="page-section__title-style" src="assets/images/title-style-white.png" alt="">
+        <p class="page-section__paragraph page-section__paragraph--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row gutters-60">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <h4 class="skill__single-part__title">DRAWING</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="pngtree-continuous-line-drawing-of-hand-writing-with-a-pen-on-paper-png-image_1716651.jpg"style="width:50%" alt="">
+              <h4 class="skill__single-part__title"> COMPUTER PROGRAMMING</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #FFAC1B;;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="피아노.jpg" style="width:50%" alt="">
+              <h4 class="skill__single-part__title">PLAYING THE PIANO</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #C99AFF;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY SERVICES</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row gutters-70">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/logo-design.png" alt="">
+              <h4 class="service__single-section__title">LOGO DESIGN</h4>
+              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/website-design.png" alt="">
+              <h4 class="service__single-section__title">WEBSITE DESIGN</h4>
+              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/support.png" alt="">
+              <h4 class="service__single-section__title">SUPPORT</h4>
+              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="overview overview--bg">
+
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">MY PORTFOLIO</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">                                                                                                                                     </p>
+        <div class="portfolio__button-group">
+          <a class="button button--default" data-filter="all" href="#">ALL</a>
+          <a class="button button--default" data-filter=".category-a" href="#">DEVELOPMENT</a>
+          <a class="button button--default" data-filter=".category-b" href="#">DESIGN</a>
+          <a class="button button--default" data-filter=".category-c" href="#">HTML</a>
+          <a class="button button--default" data-filter=".category-d" href="#">JAVA</a>
+        </div>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-a category-b category-c" data-order="1">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-1.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>LOGO DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-a category-c" data-order="2">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-2.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>WEBSITE DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-c" data-order="3">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-3.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>LOGO DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="4">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-4.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>PHOTOGRAPHY</h4>
+                  <p>photographer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-b category-d" data-order="5">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-5.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>WEBSITE DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio__single-section mix category-d" data-order="6">
+              <img class="portfolio__single-section__image img-responsive" src="assets/images/portfolio-6.png" alt="">
+              <div class="portfolio__single-section__overlay">
+                <div class="overlay-content">
+                  <h4>LOGO DESIGN</h4>
+                  <p>Designer</p>
+                </div>
+                <div class="portfolio__single-section__search-icon">
+                  <a href="#"><img src="assets/images/search-icon.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider slider--bg">
+    <div id="myCarousel" class="carousel container slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img src="다부니_공식_일러스트.png" style="width:100px; height:100px">
+                <h4>EUN-KYUNG BYUN</h4>
+                <h6>my mother</h6>
+                <p>Eun-Kyung Byun is my mom. She is smart and beautiful. But when she's angry, she is very scary. She is good at cook, dance and sing.  </p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img class="carousel-person-image" src="assets/images/team-2.png" alt="">
+                <h4>DONG JIN HYUN</h4>
+                <h6>my father</h6>
+                <p>Dong Jin Hyun is my father. He is smart and fun. He is playful. But when he angry, he is very scary too. He is good at math and explain. </p>
+                  <div class="rating">
+                    <ul>
+                      <li><i class="material-icons">star</i></li>
+                      <li><i class="material-icons">star</i></li>
+                      <li><i class="material-icons">star</i></li>
+                      <li><i class="material-icons">star</i></li>
+                      <li><i class="material-icons">star</i></li>
+                    </ul>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+
+        <div class="item">
+          <div class="carousel-content">
+            <div class="">
+              <div class="text-center">
+                <img class="carousel-person-image" src="assets/images/team-3.png" alt="">
+                <h4>JU-WON HYUN</h4>
+                <h6>my younger brother</h6>
+                <p>Ju-Won Hyun is my younger brother. He is a naughty boy. I fight with him every day. He is cute? i don't think so...</p>
+                <div class="rating">
+                  <ul>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                    <li><i class="material-icons">star</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="blog">
+    <div class="container">
+      <div class="page-section">
+        <h2 class="page-section__title">BLOG POST</h2>
+        <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <p class="page-section__paragraph">                                                                                                 </p>
+        <div class="row gutters-40">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img class="img-responsive" src="assets/images/blog-1.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/blog-2.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/blog-3.png" alt="">
+              <p class="blog__single__date">MAY 25 , 2017 </p>
+              <i class="material-icons">comment</i> 5
+              <a href="#"><h4 class="blog__single__title">HEADLINE LATEST WORLD NEWS</h4></a>
+              <p class="blog__single__paragraph">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  Ut enim ad minim veniam <a href="#"><span class="blog__single__paragraph--read-more">READ MORE...</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+  <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/mixitup.js"></script>
+
+  <script>
+    $('a').click(function(e)
+      {
+        e.preventDefault();
+      });
+
+    // calling mixitup
+    var mixer = mixitup(".portfolio");
+  </script>
 </body>
 </html>
